@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pontos de Coleta - Reduzsíduo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="src/js/script.js" defer></script>
+    <script src="src/js/scriptColeta.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">REDUZSÍDUO</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="index.html#funcionalidades">Funcionalidades</a>
+            <a href="perfil.html" id="impactoLink">Impacto</a>
+            <a href="educacao.html">Educação Ambiental</a>
+            <button id="entrarBtn">Entrar</button>
+        </nav>
+    </header>
+
+    <main class="mapa-coleta">
+        <h1>Pontos de Coleta</h1>
+
+        <section class="filtros">
+            <h3>Filtrar por tipo de resíduo:</h3>
+            <label><input type="checkbox" name="residuo" value="organico" /> Orgânico</label>
+            <label><input type="checkbox" name="residuo" value="reciclavel" /> Reciclável</label>
+            <label><input type="checkbox" name="residuo" value="eletronico" /> Eletrônico</label>
+        </section>
+
+        <section class="mapa">
+            <h3>Mapa com Localizações</h3>
+            <div id="map" style="height: 400px; width: 100%; border-radius: 10px;" class="map-placeholder"></div>
+        </section>
+
+        <section class="locais" id="local">
+            <h3>Locais Próximos:</h3>
+            <div class="local">
+                <strong>EcoPonto Bairro Central</strong><br />
+                Endereço: Rua Verde, 123 – Centro<br />
+                Tipos aceitos: Orgânico, Reciclável<br />
+                Horário: Seg a Sáb, 08h às 18h
+            </div>
+
+            <div class="local">
+                <strong>Estação ReciclaTech</strong><br />
+                Endereço: Av. Sustentável, 456 – Parque Verde<br />
+                Tipos aceitos: Eletrônicos<br />
+                Horário: Seg a Sex, 09h às 17h
+            </div>
+
+            <div class="local">
+                <strong>Ponto Limpo Bairro Sol</strong><br />
+                Endereço: R. do Lixo Zero, 789 – Bairro Sol<br />
+                Tipos aceitos: Todos<br />
+                Horário: Todos os dias, 07h às 19h
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduzsíduo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="src/js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="logo">REDUZSÍDUO</h1>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#funcionalidades">Funcionalidades</a>
+            <a href="perfil.html" id="impactoLink">Impacto</a>
+            <a href="educacao.html">Educação Ambiental</a>
+            <a href="login.html"><button id="entrarBtn">Entrar</button></a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="intro">
+                <h1>Reduzsíduo: Inovação no descarte consciente</h1>
+                <p>Uma plataforma digital que conecta pessoas, pontos de coleta e conhecimento ambiental. Reduza o impacto do lixo na sua cidade e ajude a transformar o futuro.</p>
+                <a href="cadastro.html" id="btnCadastro"><button class="cadastrar">CADASTRE-SE GRATUITAMENTE</button></a>
+            </div>
+            <img src="src/images/logo.svg" alt="">
+        </section>
+        <section class="impactos">
+            <div class="impacto">
+                <h3>🌱 Impacto Ambiental</h3>
+                <p>Reduza a poluição e aumente a vida útil dos aterros com descarte consciente.</p>
+            </div>
+            <div class="impacto">
+                <h3>❤️ Impacto Social</h3>
+                <p>Melhore a saúde pública combatendo focos de doenças como a dengue.</p>
+            </div>
+            <div class="impacto">
+                <h3>💰 Impacto Econômico</h3>
+                <p>Ajude sua cidade a economizar com coleta eficiente e reciclagem.</p>
+            </div>
+        </section>
+        <h1>FUNCIONALIDADES DA PLATAFORMA</h1>
+        <section id="funcionalidades">
+            <a class="funcionalidade" href="coleta.html" data-requer-login="true">
+                <span>📍</span>
+                <h3>mapa de pontos de coleta</h3>
+                <p>Visualize locais próximos para descarte correto de resíduos orgânicos, recicláveis e eletrônicos.</p>
+            </a>
+            <a class="funcionalidade" href="coleta.html#local" data-requer-login="true">
+                <span>🚛</span>
+                <h3>Cronograma de Coleta</h3>
+                <p>Consulte os dias e horários da coleta na sua rua para não perder a passagem do caminhão.</p>
+            </a>
+            <a class="funcionalidade" href="educacao.html">
+                <span>♻️</span>
+                <h3>Educação Ambiental</h3>
+                <p>Aprenda sobre separação de lixo, compostagem e o impacto das suas ações no meio ambiente.</p>
+            </a>
+            <a class="funcionalidade coleta" href="solicitar.html" data-requer-login="true">
+                <span><img src="src/images/solicitar.svg" alt=""></span>
+                <h3>Solicitar Coleta</h3>
+                <p>Consulte os dias e horários da coleta na sua rua para não perder a passagem do caminhão.</p>
+            </a>
+        </section>
+    </main>
+</body>
+</html>

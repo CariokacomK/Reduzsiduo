@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Perfil - Reduzsíduo</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="src/js/script.js"></script>
+    <script src="src/js/scriptPerfil.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">REDUZSÍDUO</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="index.html#funcionalidades">Funcionalidades</a>
+            <a href="educacao.html">Educação Ambiental</a>
+            <button id="entrarBtn">Sair</button>
+        </nav>
+    </header>
+
+    <main class="perfil">
+        <h1>MEU PERFIL</h1>
+        <div class="about">
+            <section class="usuario-info">
+                <h2>INFORMAÇÕES DO USUÁRIO</h2>
+                <p id="info-nome"></p>
+                <p id="info-endereco"></p>
+                <p id="info-email"></p>
+            </section>
+
+            <section class="meu-impacto">
+                <h2>MEU IMPACTO POSITIVO</h2>
+                <div class="dados">
+                    <div><strong>RESÍDUOS RECICLADOS</strong><br><span id="kg-total">0 kg</span></div>
+                    <div><strong>COLETAS SOLICITADAS</strong><br><span id="total-coletas">0</span></div>
+                    <div><strong>CO₂ EVITADO</strong><br><span id="co2">0 kg</span></div>
+                    <div><strong>ECONOMIA GERADA</strong><br><span id="economia">R$ 0,00</span></div>
+                </div>
+            </section>
+
+            <section class="historico">
+                <h2>HISTÓRICO DE COLETAS</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Tipo de Resíduo</th>
+                            <th>Quantidade</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela-coletas">
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

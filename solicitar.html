@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solicitar Coleta - Reduzsíduo</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="src/js/script.js" defer></script>
+  <script src="src/js/scriptColetaSalvar.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1 class="logo">REDUZSÍDUO</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="index.html#funcionalidades">Funcionalidades</a>
+      <a href="perfil.html" id="impactoLink">Impacto</a>
+      <a href="educacao.html">Educação Ambiental</a>
+      <button id="entrarBtn">Entrar</button>
+    </nav>
+  </header>
+
+  <main class="solicitacao-coleta">
+    <h1>Solicitar Coleta</h1>
+
+    <section class="formulario">
+      <div class="card-form">
+        <img src="src/images/logo.svg" alt="Logo Reduzsíduo" class="logo-form" />
+        <h2>Preencha os dados abaixo</h2>
+
+        <form action="#" method="post">
+          <label for="nome">Nome completo:</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu Nome" required />
+
+          <label for="endereco">Endereço completo:</label>
+          <input type="text" id="endereco" name="endereco" required />
+
+          <label for="tipo">Tipo de resíduo:</label>
+          <select id="tipo" name="tipo" required>
+            <option value="">Selecione...</option>
+            <option value="organico">Orgânico</option>
+            <option value="reciclavel">Reciclável</option>
+            <option value="eletronico">Eletrônico</option>
+          </select>
+
+          <label for="quantidade">Quantidade aproximada (em kg):</label>
+          <input type="number" id="quantidade" name="quantidade" min="0" step="0.1" />
+
+          <label for="observacoes">Observações adicionais:</label>
+          <textarea id="observacoes" name="observacoes" rows="4"></textarea>
+
+          <button type="submit" class="btn-enviar">ENVIAR SOLICITAÇÃO</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

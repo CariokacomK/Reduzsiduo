@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro - Reduzsíduo</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="src/js/scriptCadastro.js" defer></script>
+</head>
+<body style="background-color: #eaf8ef;">
+  <main class="cadastro">
+    <div class="card-login">
+      <a href="index.html"><img src="src/images/logo.svg" alt="Logo Reduzsíduo" class="logo" /></a>
+      <form action="#" method="post">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu Nome" required />
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" placeholder="********" required />
+
+        <label for="endereco">Endereço</label>
+        <input type="text" id="endereco" name="endereco" placeholder="Av. Brasil, 123 - Centro" required />
+
+        <div class="checkbox-group">
+          <label>
+            <input type="checkbox" name="localizacao" />
+            Usar localização atual
+          </label>
+
+          <label>
+            <input type="checkbox" name="termos" required />
+            Aceito os <a href="#">Termos de Uso</a> e <a href="#">Política de Privacidade</a>
+          </label>
+        </div>
+
+        <button type="submit" class="btn-enviar">Cadastrar</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
