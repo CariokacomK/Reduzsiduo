@@ -1,0 +1,214 @@
+@media (max-width: 1024px) {
+  html {
+    font-size: 90%;
+  }
+
+  h1 {
+    font-size: 28px !important;
+  }
+
+  h2 {
+    font-size: 24px !important;
+  }
+
+  h3 {
+    font-size: 22px !important;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+  }
+
+  nav a,
+  nav button {
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: transparent;
+    color: white;
+    border: none;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+
+    .intro {
+      max-width: 100%;
+      align-items: center;
+
+      h1 {
+        font-size: 28px;
+        text-align: center;
+      }
+
+      p {
+        font-size: 16px;
+        max-width: 100%;
+      }
+
+      button {
+        width: 100%;
+        padding: 15px;
+      }
+    }
+
+    img {
+      width: 70%;
+      max-width: 300px;
+      margin-top: 20px;
+    }
+  }
+
+  .impactos,
+  .funcionalidades {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .impacto,
+  .funcionalidade {
+    width: 90% !important;
+    margin-bottom: 20px;
+  }
+
+  .coleta {
+    max-width: 100%;
+  }
+
+  .solicitacao-coleta {
+    h1 {
+      font-size: 28px;
+    }
+
+    .card-form {
+      padding: 20px;
+      max-width: 90%;
+
+      h2 {
+        font-size: 22px;
+      }
+
+      input,
+      select,
+      textarea {
+        font-size: 16px;
+      }
+
+      .btn-enviar {
+        padding: 16px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .mapa-coleta {
+    padding: 0 10px;
+
+    h1 {
+      font-size: 28px;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+
+    #map {
+      height: 300px !important;
+    }
+  }
+
+  .educacao {
+    padding: 20px;
+
+    .bloco {
+      padding: 15px;
+
+      h2 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      ul li {
+        font-size: 16px;
+      }
+    }
+
+    .video {
+      padding: 20px;
+
+      h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+      }
+
+      #video-iframe,
+      iframe,
+      video {
+        width: 100% !important;
+        height: auto !important;
+      }
+    }
+  }
+
+  .perfil {
+    padding: 20px;
+
+    .about {
+      .usuario-info,
+      .meu-impacto,
+      .historico {
+        padding: 20px;
+      }
+
+      .usuario-info p {
+        font-size: 18px;
+      }
+
+      .meu-impacto .dados {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .historico table {
+        font-size: 14px;
+      }
+
+      th, td {
+        padding: 8px;
+      }
+    }
+  }
+
+  .cadastro {
+    padding: 20px;
+
+    .card-login {
+      padding: 20px;
+      width: 100%;
+    }
+  }
+}
